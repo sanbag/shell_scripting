@@ -1,10 +1,18 @@
 #!/bin/bash
 
- echo "hi sanbag"
+myvar="hi santosh"
+
+length=${#myvar}
+
+echo "length - $length"
+
+upper=${myvar^^}
+
+echo "$upper"
+
+slice=${myvar:4:7}
+
+echo "slice $slice"
 
 
-
-
-my_new_array=(1 2 30.5 "hello santosh")
-echo " hi i am ${my_new_array[3]}"
 
