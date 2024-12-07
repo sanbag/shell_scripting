@@ -1,18 +1,22 @@
 #!/bin/bash
 
-myvar="hi santosh"
+echo " choose a for date "
+echo " choose b for pwd "
+echo " chose c for ls "
 
-length=${#myvar}
 
-echo "length - $length"
+read -p "please eenter your choice: " choice
 
-upper=${myvar^^}
+case $choice in
+	a)date;;
+	b)pwd;;
+	c)ls;;
+	*) echo "not valid"
 
-echo "$upper"
+esac
 
-slice=${myvar:4:7}
 
-echo "slice $slice"
+
 
 
 
