@@ -1,22 +1,16 @@
 #!/bin/bash
 
-echo " choose a for date "
-echo " choose b for pwd "
-echo " chose c for ls "
+path="/Users/santoshbaggon/Documents/shell_scripting/myscripts/san.txt"
 
 
-read -p "please eenter your choice: " choice
+for file in $path
+do
+	echo " $file"
 
-case $choice in
-	a)date;;
-	b)pwd;;
-	c)ls;;
-	*) echo "not valid"
-
-esac
+done
 
 
+count=$(cat $path | wc -l)
 
 
-
-
+echo "$count"
