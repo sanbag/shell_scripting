@@ -1,16 +1,13 @@
 #!/bin/bash
+count=0
+num=10
 
-path="/Users/santoshbaggon/Documents/shell_scripting/myscripts/san.txt"
 
-
-for file in $path
+while [[ $count -le $num ]]
 do
-	echo " $file"
+	echo "$count"
+	let count++
 
 done
 
 
-count=$(cat $path | wc -l)
-
-
-echo "$count"
