@@ -7,7 +7,7 @@ while [[ $count -le $num ]]
 do
 	echo "$count"
 	let count++
-
+	echo "hi"
 done
 
 
