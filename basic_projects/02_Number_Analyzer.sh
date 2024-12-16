@@ -21,7 +21,15 @@ do
 	fi
 
 	case $number in
-		[1-9]|10
+		[1-9]|10)
+		category='small';;
+		[1-4][0-9]|50)
+		category="medium";;
+		*)
+		category="large";;
+	esac
+
+	echo "$number is $parity and $category"
 
 done
 
