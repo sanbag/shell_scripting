@@ -1,13 +1,9 @@
 #!/bin/bash
-count=0
-num=10
 
+function myfun {
 
-while [[ $count -le $num ]]
-do
-	echo "$count"
-	let count++
-	echo "hello"
-done
+echo "hi"
 
+}
 
+myfun
